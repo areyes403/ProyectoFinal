@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		481A6DDC283E79D3001EA077 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 481A6DDB283E79D2001EA077 /* GoogleService-Info.plist */; };
 		48213278283BD449005AC59C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48213277283BD449005AC59C /* AppDelegate.swift */; };
 		4821327A283BD449005AC59C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48213279283BD449005AC59C /* SceneDelegate.swift */; };
 		4821327C283BD449005AC59C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4821327B283BD449005AC59C /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		481A6DDB283E79D2001EA077 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		48213274283BD449005AC59C /* ProyectoFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48213277283BD449005AC59C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48213279283BD449005AC59C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 		48213276283BD449005AC59C /* ProyectoFinal */ = {
 			isa = PBXGroup;
 			children = (
+				481A6DDB283E79D2001EA077 /* GoogleService-Info.plist */,
 				48213277283BD449005AC59C /* AppDelegate.swift */,
 				48213279283BD449005AC59C /* SceneDelegate.swift */,
 				4821327B283BD449005AC59C /* ViewController.swift */,
@@ -86,7 +89,6 @@
 				D70BB6EEB7E5E4C1F2B50CC1 /* Pods-ProyectoFinal.debug.xcconfig */,
 				896C19513D4D09F6BB3C4321 /* Pods-ProyectoFinal.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -158,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48213287283BD44A005AC59C /* LaunchScreen.storyboard in Resources */,
+				481A6DDC283E79D3001EA077 /* GoogleService-Info.plist in Resources */,
 				48213284283BD44A005AC59C /* Assets.xcassets in Resources */,
 				4821327F283BD449005AC59C /* Main.storyboard in Resources */,
 			);

@@ -7,6 +7,8 @@
 
 import UIKit
 import CLTypingLabel
+import FirebaseAuth
+import FirebaseCore
 
 class ViewController: UIViewController {
 
@@ -23,7 +25,31 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnLogin(_ sender: Any) {
+        if let email = tfUser.text, let password = tfPassword.text{
+            Auth.auth().signIn(withEmail: email, password: password){[weak self] authResult, error in
+            if let e = error{
+                print("error al iniciar sesion: \(e.localizedDescription)")
+            }else{
+                print("Inicio de sesion exitoso!")
+                self!.performSegue(withIdentifier: "loginmenu", sender: sender)
+            }
+            
+            }
+        }
+        
+        
+        
     }
+    
+    
+    class AppDelegate: NSObject, UIApplicationDelegate {
+      func application(_ application: UIApplication,
+                       didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        FirebaseApp.configure()
+        return true
+      }
+    }
+    
     
 }
 
